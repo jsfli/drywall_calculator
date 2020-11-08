@@ -11,6 +11,12 @@ class DryWall():
                  design_depth_m = 0.850,
                 ):
         self.design_width_m = design_width_m
+        self.left_side_shape = left_side_shape
+        self.right_side_shape = right_side_shape
+        self.top_panel = top_panel
+        self.star_position = star_position
+        self.holes = holes
+        self.gangs = gangs
         self.design_length_m = design_length_m
         self.design_depth_m = design_depth_m
 
