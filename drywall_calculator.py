@@ -1,25 +1,16 @@
-class DryWall():
+class DryWall(object):
+    PLUS_SIDE = -0.010
+    MINUS_SIDE = -0.005
+    FLAT_SIDE = -0.010
+    STAR_SIDE = -0.010
+
     def __init__(self,
+                 name,
                  design_width_m,
-                 left_side_shape,
-                 right_side_shape,
-                 top_panel,
-                 star_position,
-                 holes,
-                 gangs,
                  design_length_m = 2.540,
                  design_depth_m = 0.850,
                 ):
+        self.name = name
         self.design_width_m = design_width_m
-        self.left_side_shape = left_side_shape
-        self.right_side_shape = right_side_shape
-        self.top_panel = top_panel
-        self.star_position = star_position
-        self.holes = holes
-        self.gangs = gangs
         self.design_length_m = design_length_m
         self.design_depth_m = design_depth_m
-
-panel_1 = DryWall('450+-', 450, 2540)
-
-print(panel_1.design_depth_m)
